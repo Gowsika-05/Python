@@ -1,0 +1,11 @@
+num=list(map(int,input().split()))
+li=[]
+if len(num)==3:
+    for i in range(len(num)+1):
+        for j in range(len(num)+1):
+            for k in range(len(num)+1):
+                if sum(num) != i+j+k :
+                    li.append([i,j,k]) 
+                else :
+                    continue
+print(li)
